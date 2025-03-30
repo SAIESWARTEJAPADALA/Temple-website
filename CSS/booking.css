@@ -1,0 +1,198 @@
+/* 🌸 General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/temple-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🌿 Header Styling */
+header {
+    background: linear-gradient(to right, #ff9800, #e65100);
+    color: white;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    border-bottom: 5px solid #ff6f00;
+}
+
+/* 🏩 Logo Styling */
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.header-logo {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform 0.3s;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
+}
+
+/* 🏠 Navigation Bar */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* ✨ Golden-Orange Navigation Buttons */
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff9800, #ffcc33);
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid #d4a017;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(45deg, #ff6f00, #ffb300);
+    transform: scale(1.1);
+}
+
+/* 📅 Booking Form Styling */
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.booking-form {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    max-width: 420px;
+    width: 100%;
+    border: 2px solid #ff9800;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.booking-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.booking-form h2 {
+    text-align: center;
+    background: linear-gradient(to right, #ff9800, #e65100);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* 🎟️ Booking Buttons */
+.monthly-btn, .one-time-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.monthly-btn {
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    color: white;
+}
+
+.one-time-btn {
+    background: linear-gradient(45deg, #e65100, #ff6f00);
+    color: white;
+}
+
+/* 🛎️ Button Press Effect */
+.monthly-btn:active, .one-time-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ✨ Button Hover Effect */
+.monthly-btn:hover, .one-time-btn:hover {
+    background: linear-gradient(45deg, #63388e, #389f8e);
+    transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .booking-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .booking-form {
+        width: 90%;
+    }
+}
+
+/* 🌸 Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+    font-size: 16px;
+    border-top: 5px solid #ff6f00;
+}

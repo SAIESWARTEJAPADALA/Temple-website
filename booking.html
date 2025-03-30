@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌺 శ్రీ శ్రీ శ్రీ చీరాల పోలేరమ్మ తల్లి దేవస్థానం 🌺</title>
+    <link rel="stylesheet" href="CSS/booking.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo.jpg" alt="Left Logo" class="header-logo">
+        <div class="header-title">
+            <h1>🌸 శ్రీ శ్రీ శ్రీ చీరాల పోలేరమ్మ తల్లి దేవస్థానం 🌸</h1>
+            <h2>🔖 Booking Tickets</h2>
+        </div>
+        <img src="images/logo.jpg" alt="Right Logo" class="header-logo">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="gallery.html">🖼️ Temple Updates</a></li>
+            <li><a href="booking.html">🔖 Booking Ticket</a></li>
+            <li><a href="donations.html">💰 Donations</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="booking-container">
+    <div class="booking-form">
+        <h2>📜 Monthly Pooja Booking</h2>
+        <form id="monthlyForm">
+            <label>👤 Full Name</label>
+            <input type="text" id="monthlyName" name="Full Name" required>
+
+            <label>📞 Phone Number</label>
+            <input type="tel" id="monthlyPhone" name="Phone Number" pattern="[0-9]{10}" required>
+
+            <label>📅 Start Month</label>
+            <input type="month" id="startMonth" name="Start Month" required>
+
+            <label>📅 End Month</label>
+            <input type="month" id="endMonth" name="End Month" required>
+
+            <button type="submit" class="monthly-btn">🛕 Book Now</button>
+        </form>
+    </div>
+
+    <div class="booking-form">
+        <h2>📜 One-Time Pooja Booking</h2>
+        <form id="oneTimeForm">
+            <label>👤 Full Name</label>
+            <input type="text" id="oneTimeName" name="Full Name" required>
+
+            <label>📞 Phone Number</label>
+            <input type="tel" id="oneTimePhone" name="Phone Number" pattern="[0-9]{10}" required>
+
+            <label>📅 Choose Date</label>
+            <input type="date" id="oneTimeDate" name="Booking Date" required>
+
+            <label>⏰ Select Time</label>
+            <select id="oneTimeSlot" name="Time Slot">
+                <option>6:00 AM</option>
+                <option>12:00 PM</option>
+                <option>6:00 PM</option>
+            </select>
+
+            <button type="submit" class="one-time-btn">🛕 Book Now</button>
+        </form>
+    </div>
+</section>
+
+<script src="JS/booking.js"></script>
+
+</body>
+</html>
