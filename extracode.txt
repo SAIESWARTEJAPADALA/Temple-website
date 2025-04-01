@@ -1,0 +1,654 @@
+🔍 What You Did Wrong:--->youtube
+❌ Incorrect Format: "https://www.youtube.com/watch?v=2x7LNzfX_rU"-->watch
+✅ Correct Format: "https://www.youtube.com/embed/2x7LNzfX_rU"---->embed/
+
+
+href="css/style.css">--->css
+
+
+/project-folder:-
+*********************
+  /css
+    style.css         <-- This is the CSS file I provided
+  /js
+    script.js         <-- If you have JavaScript (though it's not mentioned here)
+  index.html          <-- Your main HTML file
+  left-logo.png       <-- Your left logo image
+  right-logo.png      <-- Your right logo image
+  booking.html        <-- Booking page
+  gallery.html        <-- Gallery page
+  donations.html      <-- Donations page
+  contact.html        <-- Contact page
+-------------------------------------------------------------------------------------------------
+Donations.html:-(temple reconstructions):
+------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 Sri Chirala Poleramma Temple 💰</title>
+    <link rel="stylesheet" href="CSS/donations.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
+</head>
+<body>
+    <!-- 🌸 Temple Header 🌸 -->
+    <header>
+        <div class="logo-container">
+            <img src="templeimage/1742626228036 (1).jpg" alt="Left Logo" class="header-logo">
+            <h1>🌸 శ్రీ శ్రీ శ్రీ చీరాల పోలేరమ్మ తల్లి దేవస్థానం 🌸</h1>
+            <img src="templeimage/1742626228036 (1).jpg" alt="Right Logo" class="header-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="gallery.html">🖼️ Temple Updates</a></li>
+                <li><a href="booking.html">🔖 Ticket Booking</a></li>
+                <li><a href="donations.html">💰 Donations</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🙏 Temple Renovation Section 🙏 -->
+    <section class="renovation-section">
+        <h2>🌺 శ్రీశ్రీశ్రీ చీరాల పోలేరమ్మ అమ్మవారి ఆలయ పునర్నిర్మాణం 🌺</h2>
+        <p>శ్రీశ్రీశ్రీ చీరాల పోలేరమ్మ అమ్మవారి ఆలయ పునర్నిర్మాణ పనులు ప్రారంభించుటకు అమ్మవారి ఆనుజ్ఞ అయినది. ఈ పునర్నిర్మాణంలో భక్తులు భాగస్వాములైన తమ పుత్రపౌత్ర పర్యంతం పుణ్యం, అమ్మవారి శుభాశీస్సులు, వంశాభివృద్ధి పొందగలరు.</p>
+        <p>రూ. 10,116/-లు ఇచ్చిన దాతల పేర్లు శిలాఫలకాలపై శాశ్వతంగా చెక్కించబడును. అమ్మవారి జన్మ నక్షత్రమైన మూలా నక్షత్రంనాడు దాతల కుటుంబసభ్యులు గోత్రనామాలు చదివించి పూజలు చేయించబడును.</p>
+        <p>మరిన్ని వివరములకు కమిటివారిని సంప్రదించగలరు.</p>
+    </section>
+
+    <!-- 🙏 Contribution & Donation Section 🙏 -->
+    <section class="donation-section">
+        <h2>🌺 Support the Temple 🌺</h2>
+        <div class="donation-methods">
+            <h3>✨ Ways to Contribute ✨</h3>
+            <p><strong>📞 PhonePe / Google Pay:</strong> 9876543210</p>
+            <p><strong>📲 UPI Payment:</strong> polerammatemple@upi</p>
+            <p><strong>🏛️ Donate in Person:</strong> Visit the temple office.</p>
+            <p><strong>🏦 Bank Transfer:</strong> A/C No: 1234567890, IFSC: XYZB0000123</p>
+        </div>
+        <div class="qr-code">
+            <h3>📸 Scan & Contribute with Blessings 🙏</h3>
+            <img src="images/qr-code.png" alt="Donation QR Code">
+        </div>
+        <button id="donateButton">Details</button>
+    </section>
+
+    <!-- 📞 Contact & Inquiry Section -->
+    <section class="donation-section">
+        <h2>📞 Have Questions? We Are Here to Help! 🙏</h2>
+        <p>If you have any concerns regarding donations, temple services, or upcoming rituals, please reach out to us.</p>
+        <div class="contact-info">
+            <h3>📌 Contact the Temple Office</h3>
+            <p><strong>📍 Phone:</strong> +91 98765 43210</p>
+            <p><strong>📧 Email:</strong> support@polerammatemple.com</p>
+        </div>
+        <h3>💬 Submit Your Inquiry 💬</h3>
+        <form id="donationForm" class="donation-form">
+            <label for="name">📝 Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email">📩 Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="phone">📞 Your Contact Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your contact number" required>
+            <label for="message">✍️ Your Message:</label>
+            <textarea id="message" placeholder="Type your message here..." required></textarea>
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </section>
+
+    <!-- 🌺 Footer -->
+    <footer>
+        <p>&copy; 2025 Sri Chirala Poleramma Temple | May the Divine Bless You 🙏</p>
+    </footer>
+    
+    <script src="JS/donations.js"></script> <!-- JavaScript File -->
+</body>
+</html>
+--------------------------------------------------------------------------------------
+donations.css:-(templereconstructions):
+---------------------------------------
+/* 🌸 General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/temple-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🌿 Header Styling */
+header {
+    background: linear-gradient(to right, #ff9800, #e65100);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    border-bottom: 5px solid #ff6f00;
+}
+
+/* 🏩 Logo Styling */
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.header-logo {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform 0.3s;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
+}
+
+/* 🏠 Navigation Bar */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* ✨ Golden-Orange Navigation Buttons */
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff9800, #ffcc33);
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid #d4a017;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(45deg, #ff6f00, #ffb300);
+    transform: scale(1.1);
+}
+
+/* 🙏 Temple Renovation Section */
+.renovation-section {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(245, 245, 245, 0.9));
+    padding: 40px 30px;
+    margin: 50px auto;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.renovation-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.renovation-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d84315;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #e65100;
+    padding-bottom: 10px;
+}
+
+.renovation-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin: 15px 0;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.renovation-section p:last-of-type {
+    font-weight: 600;
+    color: #bf360c;
+}
+
+.renovation-section p strong {
+    color: #ff5722;
+    font-weight: 700;
+}
+
+/* 🙏 Donation Section */
+.donation-section {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(245, 245, 245, 0.98));
+    padding: 50px 40px;
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 25px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 🌟 Headings */
+.donation-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #d84315;
+    margin-bottom: 15px;
+}
+
+.donation-section h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #bf360c;
+    margin-bottom: 12px;
+}
+
+/* 📜 Paragraphs */
+.donation-section p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* 📸 QR Code Styling */
+.qr-code img {
+    width: 230px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.qr-code img:hover {
+    transform: scale(1.05);
+}
+
+/* 📩 Contact Form */
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-form label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c0392b;
+    margin-top: 14px;
+}
+
+.donation-form input, 
+.donation-form textarea {
+    width: 90%;
+    max-width: 550px;
+    padding: 14px;
+    margin: 12px 0;
+    border: 2px solid #e67e22;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-form input:focus, 
+.donation-form textarea:focus {
+    border-color: #d35400;
+    box-shadow: 0px 0px 8px rgba(211, 84, 0, 0.6);
+    outline: none;
+}
+
+/* 💰 Magic Buttons */
+.magic-button, #donateButton, .donation-form button {
+    background: linear-gradient(45deg, #e65100, #ffab40);
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+}
+
+.magic-button:hover, #donateButton:hover, .donation-form button:hover {
+    background: linear-gradient(45deg, #bf360c, #ff8a65);
+    transform: scale(1.1);
+}
+
+/* 🌺 Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: linear-gradient(to right, #d4af37, #e65100);
+    color: white;
+    border-radius: 35px 35px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .donation-section {
+        width: 95%;
+        padding: 35px;
+    }
+
+    .qr-code img {
+        width: 200px;
+    }
+
+    .donation-form input, 
+    .donation-form textarea {
+        width: 95%;
+    }
+
+    .magic-button, #donateButton, .donation-form button {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .donation-section h2 {
+        font-size: 24px;
+    }
+
+    .donation-section h3 {
+        font-size: 20px;
+    }
+
+    .donation-section p {
+        font-size: 16px;
+    }
+
+    .donation-form label {
+        font-size: 18px;
+    }
+
+    .donation-form input, 
+    .donation-form textarea {
+        font-size: 16px;
+    }
+
+    .renovation-section h2 {
+        font-size: 26px;
+    }
+
+    .renovation-section p {
+        font-size: 16px;
+    }
+}
+------------------------------------------------------------------------------
+booking.html:- 101 rs monthly pooja:-
+------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌺 శ్రీ శ్రీ శ్రీ చీరాల పోలేరమ్మ తల్లి దేవస్థానం 🌺</title>
+    <link rel="stylesheet" href="CSS/booking.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo.jpg" alt="Temple Logo" class="header-logo">
+        <h1>🌸 శ్రీ శ్రీ శ్రీ చీరాల పోలేరమ్మ తల్లి దేవస్థానం 🌸</h1>
+        <img src="images/logo.jpg" alt="Temple Logo" class="header-logo">
+    </div>
+    <h2>🔖 Booking Tickets</h2>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="gallery.html">🖼️ Temple Updates</a></li>
+            <li><a href="booking.html">🔖 Booking Ticket</a></li>
+            <li><a href="donations.html">💰 Donations</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="booking-container">
+    <div class="booking-form">
+        <h2>📜 Monthly Pooja Booking</h2>
+        <p class="booking-description">నెలకు రూ. 101/-లు చెల్లించిన భక్తులకు ప్రతినిత్యం నెలరోజుల పాటు వారి కుటుంబసభ్యుల గోత్రనామాలతో అమ్మవారి పూజ జరిపించబడును. అమ్మవారి నెల ప్రసాదం అందించబడును.</p>
+        <form id="monthlyForm">
+            <label>👤 Full Name</label>
+            <input type="text" id="monthlyName" name="Full Name" required>
+
+            <label>📞 Phone Number</label>
+            <input type="tel" id="monthlyPhone" name="Phone Number" pattern="[0-9]{10}" required>
+
+            <label>📅 Start Month</label>
+            <input type="month" id="startMonth" name="Start Month" required>
+
+            <label>📅 End Month</label>
+            <input type="month" id="endMonth" name="End Month" required>
+
+            <button type="submit" class="btn">🛕 Book Now</button>
+        </form>
+    </div>
+
+    <div class="booking-form">
+        <h2>📜 One-Time Pooja Booking</h2>
+        <form id="oneTimeForm">
+            <label>👤 Full Name</label>
+            <input type="text" id="oneTimeName" name="Full Name" required>
+
+            <label>📞 Phone Number</label>
+            <input type="tel" id="oneTimePhone" name="Phone Number" pattern="[0-9]{10}" required>
+
+            <label>📅 Choose Date</label>
+            <input type="date" id="oneTimeDate" name="Booking Date" required>
+
+            <label>⏰ Select Time</label>
+            <select id="oneTimeSlot" name="Time Slot">
+                <option>6:00 AM</option>
+                <option>12:00 PM</option>
+                <option>6:00 PM</option>
+            </select>
+
+            <button type="submit" class="btn">🛕 Book Now</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 శ్రీ శ్రీ శ్రీ చీరాల పోలేరమ్మ తల్లి దేవస్థానం | All Rights Reserved.</p>
+</footer>
+
+<script src="JS/booking.js"></script>
+
+</body>
+</html>
+-----------------------------------------------------------------------------
+booking.css:-101 rs:
+----------------------
+/* 🌸 General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/temple-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* 🌿 Header Styling */
+header {
+    background: linear-gradient(to right, #ff9800, #e65100);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 5px solid #ff6f00;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform 0.3s;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
+}
+
+/* 🏠 Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #ff6f00;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #d35400;
+    transform: scale(1.1);
+}
+
+/* 📅 Booking Form Styling */
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.booking-form {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    border: 3px solid #ff9800;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.booking-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.booking-form h2 {
+    text-align: center;
+    background: linear-gradient(to right, #ff9800, #e65100);
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.booking-description {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* 🎟️ Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #d35400, #ff6f00);
+    transform: scale(1.05);
+}
+
+/* 🌸 Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+    font-size: 16px;
+}
