@@ -15,7 +15,7 @@ header {
     color: white;
     padding: 12px 0;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     border-bottom: 5px solid #ff6f00;
@@ -24,7 +24,7 @@ header {
 /* 🏩 Logo Styling */
 .logo-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 20px;
@@ -43,10 +43,6 @@ header {
 }
 
 /* 🏠 Navigation Bar */
-nav {
-    margin-top: 10px;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -60,7 +56,6 @@ nav ul li {
     display: inline;
 }
 
-/* ✨ Golden-Orange Navigation Buttons */
 nav ul li a {
     text-decoration: none;
     font-size: 18px;
@@ -145,45 +140,31 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+/* 🌟 Monthly Booking Button */
 .monthly-btn {
     background: linear-gradient(45deg, #ff5722, #ff9800);
     color: white;
+    border-radius: 30px;
 }
 
+/* 🎯 One-Time Booking Button */
 .one-time-btn {
     background: linear-gradient(45deg, #e65100, #ff6f00);
     color: white;
-}
-
-/* 🛎️ Button Press Effect */
-.monthly-btn:active, .one-time-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
 }
 
 /* ✨ Button Hover Effect */
 .monthly-btn:hover, .one-time-btn:hover {
     background: linear-gradient(45deg, #63388e, #389f8e);
     transform: scale(1.05);
+    border-radius: 40px;
 }
 
-/* 📱 Responsive Design */
-@media (max-width: 768px) {
-    .logo-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    .booking-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .booking-form {
-        width: 90%;
-    }
+/* 🛎️ Button Press Effect */
+.monthly-btn:active, .one-time-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* 🌸 Footer Styling */

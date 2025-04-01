@@ -1,22 +1,45 @@
-const monthlyForm = document.getElementById('monthlyForm');
-const oneTimeForm = document.getElementById('oneTimeForm');
+// Google Apps Script Web App URLs for form submission
+const MONTHLY_URL = 'https://script.google.com/macros/s/AKfycbwkysclh2TQJMleVI82ibZt0be_iTL_OXaTbqlEYfprvE_hz9hKT7UZiKhAtimegnqizg/exec';
+const ONETIME_URL = 'https://script.google.com/macros/s/AKfycbxQo6Do2hR1zgVkf9zICw-kJMkX2qqsrN6iGpEx4y7wF3TDlTiAtLEtm08btTaYAGG6yw/exec';
 
-const MONTHLY_URL = 'https://script.google.com/macros/s/AKfycbxjNawxwF06XO9No6fJ4Jk8bakLV8NSyJmhNzPqHAapJ7Hw14y2uc37OjK-P8cFYMERkw/exec';
-const ONETIME_URL = 'https://script.google.com/macros/s/AKfycbyJoWti4xFu85CVqV3ERyOulpyoYXue_HCK5YvqxPzsCU75MOTmsHRALejTqyZ1OP7xJg/exec';
-
+/**
+ * Handles form submission and sends data to Google Apps Script Web App.
+ * @param {Event} event - Form submission event
+ * @param {HTMLFormElement} form - The form element
+ * @param {string} url - The API endpoint for submission
+ * @param {string} type - Booking type ('monthly' or 'oneTime')
+ */
 async function submitForm(event, form, url, type) {
-    event.preventDefault();
-    
+    event.preventDefault(); // Prevent default form submission
+
     const formData = new FormData(form);
-    formData.append('type', type);
+    formData.append('type', type); // Append booking type to request
 
     try {
         const response = await fetch(url, { method: 'POST', body: formData });
         const data = await response.json();
 
         if (data.result === 'success') {
-            alert(`✅ Booking Confirmed!`);
-            form.reset();
+            // Extract user details
+            const fullName = form.querySelector("input[name='Full Name']").value;
+            const phoneNumber = form.querySelector("input[name='Phone Number']").value;
+            let bookingDetails = '';
+
+            // Determine booking details based on type
+            if (type === 'monthly') {
+                const startMonth = form.querySelector("input[name='Start Month']").value;
+                const endMonth = form.querySelector("input[name='End Month']").value;
+                bookingDetails = `📅 Duration: ${startMonth} to ${endMonth}`;
+            } else {
+                const bookingDate = form.querySelector("input[name='Booking Date']").value;
+                const timeSlot = form.querySelector("select[name='Time Slot']").value;
+                bookingDetails = `📅 Date: ${bookingDate}\n⏰ Time: ${timeSlot}`;
+            }
+
+            // Show confirmation alert
+            alert(`✅ Booking Confirmed!\n\n👤 Name: ${fullName}\n📞 Contact: ${phoneNumber}\n${bookingDetails}\n🏛 Temple Contact: 98765 43210`);
+
+            form.reset(); // Clear form after submission
         } else {
             alert('❌ Booking Failed: ' + data.message);
         }
@@ -26,5 +49,6 @@ async function submitForm(event, form, url, type) {
     }
 }
 
-monthlyForm.addEventListener('submit', (e) => submitForm(e, monthlyForm, MONTHLY_URL, 'monthly'));
-oneTimeForm.addEventListener('submit', (e) => submitForm(e, oneTimeForm, ONETIME_URL, 'oneTime'));
+// Attach event listeners to forms
+document.getElementById('monthlyForm').addEventListener('submit', (e) => submitForm(e, monthlyForm, MONTHLY_URL, 'monthly'));
+document.getElementById('oneTimeForm').addEventListener('submit', (e) => submitForm(e, oneTimeForm, ONETIME_URL, 'oneTime'));
